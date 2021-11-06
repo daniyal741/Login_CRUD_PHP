@@ -1,0 +1,29 @@
+CREATE DATABASE nghiapham1026_db;
+
+CREATE TABLE Users
+(
+
+    ID NUMBER(5) AUTO_INCREMENT,
+    Username VARCHAR(100),
+    Email VARCHAR(100),
+    Password VARCHAR(100),
+    CONSTRAINT user_id_pk PRIMARY KEY(ID) 
+
+)
+
+INSERT INTO USERS(Username,Email,Password) Values("root","root@gmail.com","root");
+
+CREATE TABLE Cars 
+( 
+    ID INT(5) AUTO_INCREMENT, 
+    Manufacturer VARCHAR(100), 
+    Model VARCHAR(100), 
+    Color VARCHAR(100),
+    CONSTRAINT car_id_pk PRIMARY KEY(ID) 
+)
+
+INSERT INTO CARS(Manufacturer,Model,Color) Values("Ford","Mustang","Blue");
+INSERT INTO CARS(Manufacturer,Model,Color) Values("Ford","Ranger","Green");
+INSERT INTO CARS(Manufacturer,Model,Color) Values("Honda","Civic","White");
+INSERT INTO CARS(Manufacturer,Model,Color) Values("Honda","Accord","Black");
+INSERT INTO CARS(Manufacturer,Model,Color) Values("Tesla","Model-X","Red");
