@@ -56,10 +56,10 @@ if (isset($_SESSION['login'])) {
         </nav>
 
         <div class="container" style="padding: 2rem 0rem;">
-            <h1>Dashboard</h1>
+            <h1>Car Management System</h1>
 
             <div style="padding:2rem 0 0 0;display:flex;justify-content:space-between;">
-                <h4>Cars Table</h4>
+                <h4>Dashboard</h4>
                 <form action="insert.php" method="post">
                     <input type="submit" value="Add" class="btn btn-primary">
                 </form>
